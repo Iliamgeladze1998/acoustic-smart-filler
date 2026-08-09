@@ -1,0 +1,117 @@
+{
+  "categories": {
+    "attempted": 3,
+    "matched": 1,
+    "note": ""
+  },
+  "debug": {
+    "descrFieldsFound": 1,
+    "descriptionLength": 998,
+    "featureFieldsFound": 3,
+    "oldPriceFieldsFound": 1,
+    "priceFieldsFound": 1,
+    "productFieldsFound": 1,
+    "promoFieldsFound": 1,
+    "tagFieldsFound": 1,
+    "videoFieldsFound": 14
+  },
+  "features": {
+    "attempted": 2,
+    "details": [
+      {
+        "feature": "ბრენდი",
+        "how": "field_name",
+        "matched": true,
+        "value": [
+          "156",
+          "Electro-Voice"
+        ]
+      },
+      {
+        "feature": "მდგომარეობა",
+        "how": "field_name",
+        "matched": true,
+        "value": [
+          "41",
+          "ახალი"
+        ]
+      }
+    ],
+    "fields_on_page": 3,
+    "matched": 2
+  },
+  "full_description": {
+    "ok": true,
+    "preview": "<p>EV PRO 780 MIC არის პროფესიონალური მიკროფონი, რომელიც შექმნილია მუსიკოსების დ",
+    "reason": "filled_rich",
+    "selector": "#elm_product_full_descr"
+  },
+  "images": {
+    "note": "File/image uploads must be done manually in CS-Cart."
+  },
+  "meta_description": {
+    "ok": true,
+    "preview": "EV PRO 780 MIC - პროფესიონალური მიკროფონი, რომელიც უზრუნველყოფს მაღალ ხარისხს და",
+    "reason": "filled",
+    "selector": "#elm_product_meta_descr"
+  },
+  "meta_keywords": {
+    "ok": true,
+    "preview": "EV PRO 780 MIC, მიკროფონები, Electro-Voice, პროფესიონალური, სტუდიური, მუსიკალური",
+    "reason": "filled",
+    "selector": "#elm_product_meta_keywords"
+  },
+  "old_price": {
+    "ok": true,
+    "preview": "400.00",
+    "reason": "filled",
+    "selector": "#elm_list_price"
+  },
+  "page_title": {
+    "ok": true,
+    "preview": "EV PRO 780 MIC - პროფესიონალური მიკროფონი",
+    "reason": "filled",
+    "selector": "#elm_product_page_title"
+  },
+  "price": {
+    "ok": true,
+    "preview": "400.00",
+    "reason": "filled",
+    "selector": "#elm_price_price"
+  },
+  "product_name": {
+    "ok": true,
+    "preview": "EV PRO 780 MIC",
+    "reason": "filled",
+    "selector": "#product_description_product"
+  },
+  "promo_text": {
+    "ok": true,
+    "preview": "<p>EV PRO 780 MIC - პროფესიონალური მიკროფონი, რომელიც შექმნილია მუსიკოსების და ა",
+    "reason": "filled_rich",
+    "selector": "#elm_product_promo_text"
+  },
+  "seo_name": {
+    "ok": true,
+    "preview": "ev-pro-780-mic",
+    "reason": "filled",
+    "selector": "#elm_seo_name"
+  },
+  "tags": {
+    "ok": true,
+    "preview": "მიკროფონები, Electro-Voice, პროფესიონალური, სტუდიური, მუსიკა"
+  },
+  "videos": {
+    "attempted": 1,
+    "fields_on_page": 14,
+    "matched": 1,
+    "note": ""
+  },
+  "category_chip_repair": {
+    "patched": 0
+  },
+  "feature_display_repair": {
+    "entries": 2,
+    "patched": 4
+  }
+}

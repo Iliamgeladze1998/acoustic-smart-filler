@@ -1,0 +1,53 @@
+{
+  "product_name": "Electro Harmonix String9 String Ensemble გიტარის ეფექტ-პედალი",
+  "price": "0.00",
+  "old_price": "0.00",
+  "tags": "ეფექტები, Electro-Harmonix, გიტარის, მუსიკალური ინსტრუმენტი, პედალი",
+  "full_description": "<p>Electro Harmonix String9 String Ensemble გიტარის ეფექტ-პედალი არის უნიკალური ინსტრუმენტი, რომელიც საშუალებას გაწვდოს თქვენი გიტარას ხმა, როგორც მრავალხმიანი სიმებიანი ანსამბლისა და სინთეზატორის. ეს პედალი იდეალურია მუსიკოსებისთვის, რომლებიც ეძებენ ახალ, ინოვაციურ ხმის ეფექტებს თავიანთ მუსიკაში.</p><h3>ტექნიკური მახასიათებლები</h3><ul><li>ბრენდი: Electro-Harmonix</li><li>ეფექტები: Synth</li><li>მდგომარეობა: ახალი</li><li>გამოშვების თარიღი: 2022 წლის 14 ივნისი</li><li>წონა: 1.6 lbs</li><li>მზა ზომები: 7.25\" x 6.2\" x 3.25\" (L x W x H)</li><li>არ საჭიროებს სპეციალურ pickups ან MIDI იმპლემენტაციას</li><li>დამატებითი ეფექტი: EHX Freeze</li><li>დრაივ და ეფექტის ვოლუმების დამოუკიდებელი კონტროლი</li><li>კომპაქტური და გამძლე დიზაინი</li></ul><h3>უპირატესობები</h3><ul><li>მარტივი გამოყენება</li><li>მრავალხმიანი სიმებიანი ხმის სიმულაცია</li><li>სწრაფი და ზუსტი ტრეკინგი</li><li>კომფორტული კონტროლები</li></ul><p>Electro Harmonix String9 გიტარის ეფექტ-პედალი არის შესანიშნავი არჩევანი მუსიკოსებისთვის, რომლებიც ეძებენ ახალ ხმის შესაძლებლობებს. ის გაწვდოს თქვენს მუსიკას ახალი სიცოცხლე და საშუალებას გაწვდოს მრავალფეროვანი ხმის ეფექტები.</p>",
+  "promo_text": "<p>გამოიყენეთ Electro Harmonix String9 String Ensemble, რათა თქვენი მუსიკა გახდეს უნიკალური და მრავალხმიანი. ეს პედალი იდეალურია როგორც სტუდიაში, ისე სცენაზე.</p>",
+  "page_title": "Electro Harmonix String9 String Ensemble გიტარის ეფექტ-პედალი",
+  "meta_description": "Electro Harmonix String9 String Ensemble გიტარის ეფექტ-პედალი, რომელიც გაწვდოს მრავალხმიანი სიმებიანი ხმის ეფექტები. იდეალურია მუსიკოსებისთვის.",
+  "meta_keywords": "Electro-Harmonix, გიტარის, ეფექტ-პედალი, მუსიკალური ინსტრუმენტი, სიმებიანი, ხმის ეფექტები",
+  "seo_name": "electro-harmonix-string9-string-ensemble",
+  "categories": [
+    "ეფექტები"
+  ],
+  "features": {
+    "ბრენდი": "Electro-Harmonix",
+    "მდგომარეობა": "ახალი"
+  },
+  "feature_values": [
+    {
+      "id": "17",
+      "field_name": "product_data[product_features][17]",
+      "label": "ბრენდი",
+      "value": "Electro-Harmonix",
+      "values": [
+        "1123",
+        "Electro-Harmonix"
+      ]
+    },
+    {
+      "id": "16",
+      "field_name": "product_data[product_features][16]",
+      "label": "მდგომარეობა",
+      "value": "ახალი",
+      "values": [
+        "41",
+        "ახალი"
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=lYrHAERhtVI",
+      "title": "Electro Harmonix String9 Demo",
+      "description": "გაიგეთ, როგორ მუშაობს Electro Harmonix String9 String Ensemble გიტარის ეფექტ-პედალი და როგორ შეუძლია შეცვალოს თქვენი მუსიკა.",
+      "provider": "youtube",
+      "position": 0,
+      "status": "A"
+    }
+  ],
+  "notes_for_user": "ძველი ფასი ცარიელია — მიუთითეთ ხელით.",
+  "product_kind": "electric_guitar"
+}

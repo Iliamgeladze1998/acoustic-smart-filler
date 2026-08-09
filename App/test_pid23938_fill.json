@@ -1,0 +1,117 @@
+{
+  "categories": {
+    "attempted": 1,
+    "matched": 1,
+    "note": ""
+  },
+  "debug": {
+    "descrFieldsFound": 1,
+    "descriptionLength": 1142,
+    "featureFieldsFound": 6,
+    "oldPriceFieldsFound": 1,
+    "priceFieldsFound": 1,
+    "productFieldsFound": 1,
+    "promoFieldsFound": 1,
+    "tagFieldsFound": 1,
+    "videoFieldsFound": 8
+  },
+  "features": {
+    "attempted": 2,
+    "details": [
+      {
+        "feature": "ბრენდი",
+        "how": "field_name",
+        "matched": true,
+        "value": [
+          "1123",
+          "Electro-Harmonix"
+        ]
+      },
+      {
+        "feature": "მდგომარეობა",
+        "how": "field_name",
+        "matched": true,
+        "value": [
+          "41",
+          "ახალი"
+        ]
+      }
+    ],
+    "fields_on_page": 6,
+    "matched": 2
+  },
+  "full_description": {
+    "ok": true,
+    "preview": "<p>Electro Harmonix String9 String Ensemble გიტარის ეფექტ-პედალი არის უნიკალური ",
+    "reason": "filled_rich",
+    "selector": "#elm_product_full_descr"
+  },
+  "images": {
+    "note": "File/image uploads must be done manually in CS-Cart."
+  },
+  "meta_description": {
+    "ok": true,
+    "preview": "Electro Harmonix String9 String Ensemble გიტარის ეფექტ-პედალი, რომელიც გაწვდოს მ",
+    "reason": "filled",
+    "selector": "#elm_product_meta_descr"
+  },
+  "meta_keywords": {
+    "ok": true,
+    "preview": "Electro-Harmonix, გიტარის, ეფექტ-პედალი, მუსიკალური ინსტრუმენტი, სიმებიანი, ხმის",
+    "reason": "filled",
+    "selector": "#elm_product_meta_keywords"
+  },
+  "old_price": {
+    "ok": true,
+    "preview": "0.00",
+    "reason": "filled",
+    "selector": "#elm_list_price"
+  },
+  "page_title": {
+    "ok": true,
+    "preview": "Electro Harmonix String9 String Ensemble გიტარის ეფექტ-პედალი",
+    "reason": "filled",
+    "selector": "#elm_product_page_title"
+  },
+  "price": {
+    "ok": true,
+    "preview": "0.00",
+    "reason": "filled",
+    "selector": "#elm_price_price"
+  },
+  "product_name": {
+    "ok": true,
+    "preview": "Electro Harmonix String9 String Ensemble გიტარის ეფექტ-პედალი",
+    "reason": "filled",
+    "selector": "#product_description_product"
+  },
+  "promo_text": {
+    "ok": true,
+    "preview": "<p>გამოიყენეთ Electro Harmonix String9 String Ensemble, რათა თქვენი მუსიკა გახდე",
+    "reason": "filled_rich",
+    "selector": "#elm_product_promo_text"
+  },
+  "seo_name": {
+    "ok": true,
+    "preview": "electro-harmonix-string9-string-ensemble",
+    "reason": "filled",
+    "selector": "#elm_seo_name"
+  },
+  "tags": {
+    "ok": true,
+    "preview": "ეფექტები, Electro-Harmonix, გიტარის, მუსიკალური ინსტრუმენტი,"
+  },
+  "videos": {
+    "attempted": 1,
+    "fields_on_page": 8,
+    "matched": 1,
+    "note": ""
+  },
+  "category_chip_repair": {
+    "patched": 0
+  },
+  "feature_display_repair": {
+    "entries": 2,
+    "patched": 4
+  }
+}

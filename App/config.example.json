@@ -1,0 +1,9 @@
+{
+  "openai_api_key": "PASTE_YOUR_OPENAI_API_KEY_HERE",
+  "openai_model": "gpt-4o-mini",
+  "content_language": "Georgian",
+  "currency_note": "Prices are for Acoustic.ge store context; use numbers only without currency symbols.",
+  "google_api_key": "PASTE_GOOGLE_API_KEY_HERE",
+  "google_cse_id": "PASTE_GOOGLE_CSE_CX_HERE",
+  "image_search_backend": "auto"
+}

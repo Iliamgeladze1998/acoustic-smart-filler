@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+config.json
+image_cache/
+last_fill_debug.json
+*.log
+
+# Test artifacts
+test_scan_output.json
+test_ai_output.json
+test_fill_result.json

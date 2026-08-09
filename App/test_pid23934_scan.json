@@ -1,0 +1,2318 @@
+{
+  "available_categories": [
+    "გამაძლიერებელი/კომბი",
+    "FINA"
+  ],
+  "available_category_options": [
+    {
+      "id": "46",
+      "value": "46",
+      "label": "გამაძლიერებელი/კომბი",
+      "field_name": "product_data[category_ids][]",
+      "selected": true,
+      "path": "ბასი / გამაძლიერებელი/კომბი",
+      "parent_id": "43",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "313",
+      "value": "313",
+      "label": "FINA",
+      "field_name": "product_data[category_ids][]",
+      "selected": true,
+      "path": "პრობლემური ნივთები / FINA",
+      "parent_id": "301",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "278",
+      "value": "278",
+      "label": "Trash category",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "Trash category",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "169",
+      "value": "169",
+      "label": "აქსესუარები & სხვა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "აქსესუარები & სხვა",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "174",
+      "value": "174",
+      "label": "ბრენდირებული ნივთები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "აქსესუარები & სხვა / ბრენდირებული ნივთები",
+      "parent_id": "169",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "173",
+      "value": "173",
+      "label": "მეტრონომი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "აქსესუარები & სხვა / მეტრონომი",
+      "parent_id": "169",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "170",
+      "value": "170",
+      "label": "სადგამი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "აქსესუარები & სხვა / სადგამი",
+      "parent_id": "169",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "175",
+      "value": "175",
+      "label": "საწმენდი საშუალებები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "აქსესუარები & სხვა / საწმენდი საშუალებები",
+      "parent_id": "169",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "176",
+      "value": "176",
+      "label": "სხვადასხვა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "აქსესუარები & სხვა / სხვადასხვა",
+      "parent_id": "169",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "322",
+      "value": "322",
+      "label": "ჩანთები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "აქსესუარები & სხვა / ჩანთები",
+      "parent_id": "169",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "305",
+      "value": "305",
+      "label": "ხელსაწყოები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "აქსესუარები & სხვა / ხელსაწყოები",
+      "parent_id": "169",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "353",
+      "value": "353",
+      "label": "აჩუქე",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "აჩუქე",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "43",
+      "value": "43",
+      "label": "ბასი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ბასი",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "45",
+      "value": "45",
+      "label": "აკუსტიკური ბასი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ბასი / აკუსტიკური ბასი",
+      "parent_id": "43",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "50",
+      "value": "50",
+      "label": "აქსესუარები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ბასი / აქსესუარები",
+      "parent_id": "43",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "44",
+      "value": "44",
+      "label": "ბას-გიტარა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ბასი / ბას-გიტარა",
+      "parent_id": "43",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "48",
+      "value": "48",
+      "label": "ეფექტები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ბასი / ეფექტები",
+      "parent_id": "43",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "51",
+      "value": "51",
+      "label": "ნაწილები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ბასი / ნაწილები",
+      "parent_id": "43",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "47",
+      "value": "47",
+      "label": "სიმები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ბასი / სიმები",
+      "parent_id": "43",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "49",
+      "value": "49",
+      "label": "ჩანთები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ბასი / ჩანთები",
+      "parent_id": "43",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "52",
+      "value": "52",
+      "label": "დასარტყამი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "338",
+      "value": "338",
+      "label": "აკუსტიკური",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / აკუსტიკური",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "63",
+      "value": "63",
+      "label": "აქსესუარები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / აქსესუარები",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "243",
+      "value": "243",
+      "label": "გამაძლიერებელი/კომბი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / გამაძლიერებელი/კომბი",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "54",
+      "value": "54",
+      "label": "ელექტრო",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / ელექტრო",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "55",
+      "value": "55",
+      "label": "თეფშები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / თეფშები",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "61",
+      "value": "61",
+      "label": "მიკროფონები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / მიკროფონები",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "64",
+      "value": "64",
+      "label": "ნაწილები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / ნაწილები",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "59",
+      "value": "59",
+      "label": "პერკუსია",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / პერკუსია",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "57",
+      "value": "57",
+      "label": "პლასტიკები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / პლასტიკები",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "58",
+      "value": "58",
+      "label": "სადგამები და პედლები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / სადგამები და პედლები",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "321",
+      "value": "321",
+      "label": "სავარჯიშო პადები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / სავარჯიშო პადები",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "60",
+      "value": "60",
+      "label": "საორკესტრო",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / საორკესტრო",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "171",
+      "value": "171",
+      "label": "სკამი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / სკამი",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "62",
+      "value": "62",
+      "label": "ჩანთები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / ჩანთები",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "56",
+      "value": "56",
+      "label": "ჯოხები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "დასარტყამი / ჯოხები",
+      "parent_id": "52",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "31",
+      "value": "31",
+      "label": "კატეგორია: გიტარა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კატეგორია: გიტარა",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "34",
+      "value": "34",
+      "label": "აკუსტიკური",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კატეგორია: გიტარა / აკუსტიკური",
+      "parent_id": "31",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "41",
+      "value": "41",
+      "label": "აქსესუარები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კატეგორია: გიტარა / აქსესუარები",
+      "parent_id": "31",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "37",
+      "value": "37",
+      "label": "გამაძლიერებელი/კომბი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კატეგორია: გიტარა / გამაძლიერებელი/კომბი",
+      "parent_id": "31",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "32",
+      "value": "32",
+      "label": "ელექტრო",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კატეგორია: გიტარა / ელექტრო",
+      "parent_id": "31",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "35",
+      "value": "35",
+      "label": "ელექტრო-აკუსტიკური",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კატეგორია: გიტარა / ელექტრო-აკუსტიკური",
+      "parent_id": "31",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "335",
+      "value": "335",
+      "label": "ელექტრო-კლასიკური",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კატეგორია: გიტარა / ელექტრო-კლასიკური",
+      "parent_id": "31",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "39",
+      "value": "39",
+      "label": "ეფექტები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კატეგორია: გიტარა / ეფექტები",
+      "parent_id": "31",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "33",
+      "value": "33",
+      "label": "კლასიკური",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კატეგორია: გიტარა / კლასიკური",
+      "parent_id": "31",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "42",
+      "value": "42",
+      "label": "ნაწილები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კატეგორია: გიტარა / ნაწილები",
+      "parent_id": "31",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "38",
+      "value": "38",
+      "label": "სიმები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კატეგორია: გიტარა / სიმები",
+      "parent_id": "31",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "40",
+      "value": "40",
+      "label": "ჩანთები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კატეგორია: გიტარა / ჩანთები",
+      "parent_id": "31",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "65",
+      "value": "65",
+      "label": "კლავიშებიანი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კლავიშებიანი",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "72",
+      "value": "72",
+      "label": "აქსესუარები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კლავიშებიანი / აქსესუარები",
+      "parent_id": "65",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "69",
+      "value": "69",
+      "label": "გამაძლიერებელი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კლავიშებიანი / გამაძლიერებელი",
+      "parent_id": "65",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "71",
+      "value": "71",
+      "label": "სადგამები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კლავიშებიანი / სადგამები",
+      "parent_id": "65",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "67",
+      "value": "67",
+      "label": "სინთეზატორი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კლავიშებიანი / სინთეზატორი",
+      "parent_id": "65",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "70",
+      "value": "70",
+      "label": "სკამები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კლავიშებიანი / სკამები",
+      "parent_id": "65",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "242",
+      "value": "242",
+      "label": "ფორტეპიანო",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კლავიშებიანი / ფორტეპიანო",
+      "parent_id": "65",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "66",
+      "value": "66",
+      "label": "ციფრული პიანინო",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კლავიშებიანი / ციფრული პიანინო",
+      "parent_id": "65",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "159",
+      "value": "159",
+      "label": "კომუტაცია",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კომუტაცია",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "163",
+      "value": "163",
+      "label": "აუდიო კაბელები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კომუტაცია / აუდიო კაბელები",
+      "parent_id": "159",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "162",
+      "value": "162",
+      "label": "დინამიკის კაბელი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კომუტაცია / დინამიკის კაბელი",
+      "parent_id": "159",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "160",
+      "value": "160",
+      "label": "ინსტრუმენტის კაბელი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კომუტაცია / ინსტრუმენტის კაბელი",
+      "parent_id": "159",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "164",
+      "value": "164",
+      "label": "კონექტორი/ადაფტერი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კომუტაცია / კონექტორი/ადაფტერი",
+      "parent_id": "159",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "161",
+      "value": "161",
+      "label": "მიკროფონის კაბელი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კომუტაცია / მიკროფონის კაბელი",
+      "parent_id": "159",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "342",
+      "value": "342",
+      "label": "მულტიქორი (Multicore)",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "კომუტაცია / მულტიქორი (Multicore)",
+      "parent_id": "159",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "115",
+      "value": "115",
+      "label": "მიკროფონები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "მიკროფონები",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "128",
+      "value": "128",
+      "label": "აქსესუარები & სხვა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "მიკროფონები / აქსესუარები & სხვა",
+      "parent_id": "115",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "116",
+      "value": "116",
+      "label": "დინამიური",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "მიკროფონები / დინამიური",
+      "parent_id": "115",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "244",
+      "value": "244",
+      "label": "ვოკალის პროცესორი/ეფექტი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "მიკროფონები / ვოკალის პროცესორი/ეფექტი",
+      "parent_id": "115",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "117",
+      "value": "117",
+      "label": "ინსტრუმენტის",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "მიკროფონები / ინსტრუმენტის",
+      "parent_id": "115",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "118",
+      "value": "118",
+      "label": "კონდენსატორული",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "მიკროფონები / კონდენსატორული",
+      "parent_id": "115",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "121",
+      "value": "121",
+      "label": "სადგამები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "მიკროფონები / სადგამები",
+      "parent_id": "115",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "341",
+      "value": "341",
+      "label": "საკონფერენციო",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "მიკროფონები / საკონფერენციო",
+      "parent_id": "115",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "119",
+      "value": "119",
+      "label": "უკაბელო",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "მიკროფონები / უკაბელო",
+      "parent_id": "115",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "306",
+      "value": "306",
+      "label": "ჩანთები და ქეისები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "მიკროფონები / ჩანთები და ქეისები",
+      "parent_id": "115",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "86",
+      "value": "86",
+      "label": "პრო აუდიო",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრო აუდიო",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "347",
+      "value": "347",
+      "label": "აქტიური დინამიკები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრო აუდიო / აქტიური დინამიკები",
+      "parent_id": "86",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "92",
+      "value": "92",
+      "label": "კაბელები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრო აუდიო / კაბელები",
+      "parent_id": "86",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "324",
+      "value": "324",
+      "label": "მეგაფონი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრო აუდიო / მეგაფონი",
+      "parent_id": "86",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "88",
+      "value": "88",
+      "label": "მიქსერი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრო აუდიო / მიქსერი",
+      "parent_id": "86",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "94",
+      "value": "94",
+      "label": "ნაწილები და აქსესუარები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრო აუდიო / ნაწილები და აქსესუარები",
+      "parent_id": "86",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "348",
+      "value": "348",
+      "label": "პასიური დინამიკები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრო აუდიო / პასიური დინამიკები",
+      "parent_id": "86",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "93",
+      "value": "93",
+      "label": "სამონტაჟო აღჭურვილობა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრო აუდიო / სამონტაჟო აღჭურვილობა",
+      "parent_id": "86",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "308",
+      "value": "308",
+      "label": "ფონური დინამიკები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრო აუდიო / ფონური დინამიკები",
+      "parent_id": "86",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "89",
+      "value": "89",
+      "label": "ხმის გამაძლიერებელი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრო აუდიო / ხმის გამაძლიერებელი",
+      "parent_id": "86",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "301",
+      "value": "301",
+      "label": "პრობლემური ნივთები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "303",
+      "value": "303",
+      "label": "Bluetooth დინამიკები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / Bluetooth დინამიკები",
+      "parent_id": "313",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "90",
+      "value": "90",
+      "label": "Crossover",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / Crossover",
+      "parent_id": "313",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "107",
+      "value": "107",
+      "label": "DJ",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / DJ",
+      "parent_id": "313",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "325",
+      "value": "325",
+      "label": "DJ",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / DJ",
+      "parent_id": "313",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "114",
+      "value": "114",
+      "label": "აქსესუარები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / DJ / აქსესუარები",
+      "parent_id": "107",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "349",
+      "value": "349",
+      "label": "დესკტოპ-სინთეზატორები და ხმის მოდულები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / DJ / დესკტოპ-სინთეზატორები და ხმის მოდულები",
+      "parent_id": "107",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "329",
+      "value": "329",
+      "label": "დრამ-მანქანა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / DJ / დრამ-მანქანა",
+      "parent_id": "107",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "111",
+      "value": "111",
+      "label": "მიქსერი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / DJ / მიქსერი",
+      "parent_id": "107",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "113",
+      "value": "113",
+      "label": "სადგამები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / DJ / სადგამები",
+      "parent_id": "107",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "326",
+      "value": "326",
+      "label": "ჩანთები და ქეისები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / DJ / ჩანთები და ქეისები",
+      "parent_id": "107",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "109",
+      "value": "109",
+      "label": "DJ კონტროლერი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / DJ კონტროლერი",
+      "parent_id": "313",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "108",
+      "value": "108",
+      "label": "DJ ნაკრები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / DJ ნაკრები",
+      "parent_id": "313",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "68",
+      "value": "68",
+      "label": "MIDI კლავიატურა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / MIDI კლავიატურა",
+      "parent_id": "313",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "82",
+      "value": "82",
+      "label": "MIDI კონტროლერი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / MIDI კონტროლერი",
+      "parent_id": "313",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "95",
+      "value": "95",
+      "label": "PA სადგამები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "პრობლემური ნივთები / FINA / PA სადგამები",
+      "parent_id": "313",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "352",
+      "value": "352",
+      "label": "საახალწლო ფასდაკლებები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "საახალწლო ფასდაკლებები",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "153",
+      "value": "153",
+      "label": "სადგამები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სადგამები",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "328",
+      "value": "328",
+      "label": "გამაძლიერებლის",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სადგამები / გამაძლიერებლის",
+      "parent_id": "153",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "157",
+      "value": "157",
+      "label": "გიტარის",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სადგამები / გიტარის",
+      "parent_id": "153",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "158",
+      "value": "158",
+      "label": "კლავიშის",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სადგამები / კლავიშის",
+      "parent_id": "153",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "155",
+      "value": "155",
+      "label": "ლეპტოპის",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სადგამები / ლეპტოპის",
+      "parent_id": "153",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "154",
+      "value": "154",
+      "label": "მიკროფონის",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სადგამები / მიკროფონის",
+      "parent_id": "153",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "156",
+      "value": "156",
+      "label": "ნოტების/პიუპიტრი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სადგამები / ნოტების/პიუპიტრი",
+      "parent_id": "153",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "331",
+      "value": "331",
+      "label": "სტუდიური მონიტორის",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სადგამები / სტუდიური მონიტორის",
+      "parent_id": "153",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "96",
+      "value": "96",
+      "label": "სასცენო ეფექტები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "103",
+      "value": "103",
+      "label": "ბოლის აპარატი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / ბოლის აპარატი",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "100",
+      "value": "100",
+      "label": "განათების კონტროლერები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / განათების კონტროლერები",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "101",
+      "value": "101",
+      "label": "დეკორატიული",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / დეკორატიული",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "310",
+      "value": "310",
+      "label": "დისკო-ბურთი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / დისკო-ბურთი",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "323",
+      "value": "323",
+      "label": "ვოში",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / ვოში",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "102",
+      "value": "102",
+      "label": "თეატრის განათება",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / თეატრის განათება",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "316",
+      "value": "316",
+      "label": "თოვლის აპარატი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / თოვლის აპარატი",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "104",
+      "value": "104",
+      "label": "ლაზერი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / ლაზერი",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "99",
+      "value": "99",
+      "label": "ლედ-პარი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / ლედ-პარი",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "98",
+      "value": "98",
+      "label": "მოტრიალე თავი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / მოტრიალე თავი",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "106",
+      "value": "106",
+      "label": "ნაწილები და აქსესუარები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / ნაწილები და აქსესუარები",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "318",
+      "value": "318",
+      "label": "პიროტექნიკა (ცეცხლის გამშვები)",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / პიროტექნიკა (ცეცხლის გამშვები)",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "245",
+      "value": "245",
+      "label": "საპნის ბუშტის აპარატი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / საპნის ბუშტის აპარატი",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "317",
+      "value": "317",
+      "label": "სითხეები და სახარჯი მასალა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / სითხეები და სახარჯი მასალა",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "105",
+      "value": "105",
+      "label": "სტრობი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / სტრობი",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "319",
+      "value": "319",
+      "label": "ფერმა (განათების კონსტრუქცია)",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / ფერმა (განათების კონსტრუქცია)",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "97",
+      "value": "97",
+      "label": "წერტილოვანი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სასცენო ეფექტები / წერტილოვანი",
+      "parent_id": "96",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "73",
+      "value": "73",
+      "label": "სტუდია",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სტუდია",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "80",
+      "value": "80",
+      "label": "აკუსტიკური პანელები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სტუდია / აკუსტიკური პანელები",
+      "parent_id": "73",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "74",
+      "value": "74",
+      "label": "აუდიო ინტერფეისი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სტუდია / აუდიო ინტერფეისი",
+      "parent_id": "73",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "84",
+      "value": "84",
+      "label": "აქსესუარები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სტუდია / აქსესუარები",
+      "parent_id": "73",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "83",
+      "value": "83",
+      "label": "ეფექტები და DSP",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სტუდია / ეფექტები და DSP",
+      "parent_id": "73",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "76",
+      "value": "76",
+      "label": "მიკროფონები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სტუდია / მიკროფონები",
+      "parent_id": "73",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "78",
+      "value": "78",
+      "label": "პორტატული ჩამწერი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სტუდია / პორტატული ჩამწერი",
+      "parent_id": "73",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "77",
+      "value": "77",
+      "label": "პრე-გამაძლიერებელი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სტუდია / პრე-გამაძლიერებელი",
+      "parent_id": "73",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "314",
+      "value": "314",
+      "label": "საკომუნიკაციო კარადა/რეკი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სტუდია / საკომუნიკაციო კარადა/რეკი",
+      "parent_id": "73",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "85",
+      "value": "85",
+      "label": "სტუდიის ნაკრები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სტუდია / სტუდიის ნაკრები",
+      "parent_id": "73",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "75",
+      "value": "75",
+      "label": "სტუდიური მონიტორები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სტუდია / სტუდიური მონიტორები",
+      "parent_id": "73",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "79",
+      "value": "79",
+      "label": "ყურსასმენი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "სტუდია / ყურსასმენი",
+      "parent_id": "73",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "148",
+      "value": "148",
+      "label": "ტრადიციული",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ტრადიციული",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "279",
+      "value": "279",
+      "label": "აქსესუარები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ტრადიციული / აქსესუარები",
+      "parent_id": "148",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "332",
+      "value": "332",
+      "label": "ბლუგრას-ინსტრუმენტები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ტრადიციული / ბლუგრას-ინსტრუმენტები",
+      "parent_id": "148",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "280",
+      "value": "280",
+      "label": "კალიმბა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ტრადიციული / კალიმბა",
+      "parent_id": "148",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "284",
+      "value": "284",
+      "label": "პერკუსია",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ტრადიციული / პერკუსია",
+      "parent_id": "148",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "307",
+      "value": "307",
+      "label": "რიტუალური ინსტრუმენტები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ტრადიციული / რიტუალური ინსტრუმენტები",
+      "parent_id": "148",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "36",
+      "value": "36",
+      "label": "უკულელე და სამოგზაურო",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ტრადიციული / უკულელე და სამოგზაურო",
+      "parent_id": "148",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "149",
+      "value": "149",
+      "label": "ქართული",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ტრადიციული / ქართული",
+      "parent_id": "148",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "129",
+      "value": "129",
+      "label": "ჩასაბერი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "302",
+      "value": "302",
+      "label": "აქსესუარები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი / აქსესუარები",
+      "parent_id": "129",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "141",
+      "value": "141",
+      "label": "ელექტრო-ჩასაბერი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი / ელექტრო-ჩასაბერი",
+      "parent_id": "129",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "133",
+      "value": "133",
+      "label": "ვალტორნა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი / ვალტორნა",
+      "parent_id": "129",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "132",
+      "value": "132",
+      "label": "კლარნეტი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი / კლარნეტი",
+      "parent_id": "129",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "139",
+      "value": "139",
+      "label": "მელოდიკა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი / მელოდიკა",
+      "parent_id": "129",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "311",
+      "value": "311",
+      "label": "ოკარინა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი / ოკარინა",
+      "parent_id": "129",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "130",
+      "value": "130",
+      "label": "საქსაფონი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი / საქსაფონი",
+      "parent_id": "129",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "131",
+      "value": "131",
+      "label": "საყვირი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი / საყვირი",
+      "parent_id": "129",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "142",
+      "value": "142",
+      "label": "სხვადასხვა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი / სხვადასხვა",
+      "parent_id": "129",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "134",
+      "value": "134",
+      "label": "ტრომბონი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი / ტრომბონი",
+      "parent_id": "129",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "136",
+      "value": "136",
+      "label": "ფაგოტი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი / ფაგოტი",
+      "parent_id": "129",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "137",
+      "value": "137",
+      "label": "ფლეიტა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი / ფლეიტა",
+      "parent_id": "129",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "140",
+      "value": "140",
+      "label": "ჰარმონიკა",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი / ჰარმონიკა",
+      "parent_id": "129",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "135",
+      "value": "135",
+      "label": "ჰობოი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ჩასაბერი / ჰობოი",
+      "parent_id": "129",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "143",
+      "value": "143",
+      "label": "ხემიანი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ხემიანი",
+      "parent_id": "",
+      "level": 0,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "147",
+      "value": "147",
+      "label": "აქსესუარები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ხემიანი / აქსესუარები",
+      "parent_id": "143",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "144",
+      "value": "144",
+      "label": "ვიოლინო",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ხემიანი / ვიოლინო",
+      "parent_id": "143",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "146",
+      "value": "146",
+      "label": "კონტრაბასი",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ხემიანი / კონტრაბასი",
+      "parent_id": "143",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "337",
+      "value": "337",
+      "label": "სიმები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ხემიანი / სიმები",
+      "parent_id": "143",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "346",
+      "value": "346",
+      "label": "ჩანთები",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ხემიანი / ჩანთები",
+      "parent_id": "143",
+      "level": 1,
+      "source": "categories.ajax"
+    },
+    {
+      "id": "145",
+      "value": "145",
+      "label": "ჩელო",
+      "field_name": "product_data[category_ids][]",
+      "selected": false,
+      "path": "ხემიანი / ჩელო",
+      "parent_id": "143",
+      "level": 1,
+      "source": "categories.ajax"
+    }
+  ],
+  "available_features": [
+    {
+      "allow_empty": true,
+      "current": "1002",
+      "current_values": [
+        "1002"
+      ],
+      "field_name": "product_data[product_features][43]",
+      "group_key": "product_data[product_features][43]",
+      "id": "43",
+      "label": "ავტორი",
+      "multiple": false,
+      "name": "ავტორი",
+      "options": [
+        {
+          "label": "ქუცურუა ვახო",
+          "selected": false,
+          "value": "691"
+        },
+        {
+          "label": "პაატა მოსულიშვილი",
+          "selected": true,
+          "value": "1002"
+        },
+        {
+          "label": "-ცარიელი-",
+          "selected": false,
+          "value": ""
+        },
+        {
+          "label": "FINA",
+          "selected": false,
+          "value": "FINA"
+        },
+        {
+          "label": "ცარიელი",
+          "selected": false,
+          "value": "ცარიელი"
+        }
+      ],
+      "selected_labels": [
+        "პაატა მოსულიშვილი"
+      ],
+      "selection_mode": "single",
+      "tag": "select",
+      "type": "select_single"
+    },
+    {
+      "allow_empty": true,
+      "current": "209",
+      "current_values": [
+        "209"
+      ],
+      "field_name": "product_data[product_features][17]",
+      "group_key": "product_data[product_features][17]",
+      "id": "17",
+      "label": "ბრენდი",
+      "multiple": false,
+      "name": "ბრენდი",
+      "options": [
+        {
+          "label": "Electro-Voice",
+          "selected": false,
+          "value": "156"
+        },
+        {
+          "label": "Harley Benton",
+          "selected": true,
+          "value": "209"
+        },
+        {
+          "label": "არაბრენდირებული",
+          "selected": false,
+          "value": "720"
+        },
+        {
+          "label": "König & Meyer (K&M)",
+          "selected": false,
+          "value": "1036"
+        },
+        {
+          "label": "Electro-Harmonix",
+          "selected": false,
+          "value": "1123"
+        },
+        {
+          "label": "-ცარიელი-",
+          "selected": false,
+          "value": ""
+        },
+        {
+          "label": "FINA",
+          "selected": false,
+          "value": "FINA"
+        },
+        {
+          "label": "ცარიელი",
+          "selected": false,
+          "value": "ცარიელი"
+        }
+      ],
+      "selected_labels": [
+        "Harley Benton"
+      ],
+      "selection_mode": "single",
+      "tag": "select",
+      "type": "select_single"
+    },
+    {
+      "allow_empty": true,
+      "current": "",
+      "current_values": [
+        ""
+      ],
+      "field_name": "product_data[product_features][20]",
+      "group_key": "product_data[product_features][20]",
+      "id": "20",
+      "label": "კომბის სიმძლავრე",
+      "multiple": false,
+      "name": "კომბის სიმძლავრე",
+      "options": [
+        {
+          "label": "ცარიელი",
+          "selected": true,
+          "value": ""
+        }
+      ],
+      "selected_labels": [
+        "ცარიელი"
+      ],
+      "selection_mode": "single",
+      "tag": "select",
+      "type": "select_single"
+    },
+    {
+      "allow_empty": true,
+      "current": "41",
+      "current_values": [
+        "41"
+      ],
+      "field_name": "product_data[product_features][16]",
+      "group_key": "product_data[product_features][16]",
+      "id": "16",
+      "label": "მდგომარეობა",
+      "multiple": false,
+      "name": "მდგომარეობა",
+      "options": [
+        {
+          "label": "ახალი",
+          "selected": true,
+          "value": "41"
+        },
+        {
+          "label": "მეორადი",
+          "selected": false,
+          "value": "42"
+        },
+        {
+          "label": "ყუთის გარეშე",
+          "selected": false,
+          "value": "1034"
+        },
+        {
+          "label": "-ცარიელი-",
+          "selected": false,
+          "value": ""
+        },
+        {
+          "label": "ცარიელი",
+          "selected": false,
+          "value": "ცარიელი"
+        }
+      ],
+      "selected_labels": [
+        "ახალი"
+      ],
+      "selection_mode": "single",
+      "tag": "select",
+      "type": "select_single"
+    },
+    {
+      "allow_empty": true,
+      "current": "",
+      "current_values": [
+        ""
+      ],
+      "field_name": "product_data[product_features][64]",
+      "group_key": "product_data[product_features][64]",
+      "id": "64",
+      "label": "ცაციებისთვის (მემარცხენეებისთვის)",
+      "multiple": false,
+      "name": "ცაციებისთვის (მემარცხენეებისთვის)",
+      "options": [
+        {
+          "label": "ცარიელი",
+          "selected": true,
+          "value": ""
+        }
+      ],
+      "selected_labels": [
+        "ცარიელი"
+      ],
+      "selection_mode": "single",
+      "tag": "select",
+      "type": "select_single"
+    }
+  ],
+  "category_selection_mode": "multi",
+  "existing_tags": "",
+  "full_description": "<h2 class=\"fx-headline fx-headline--3 fx-space-bottom--m\">Cabinet for Electric Bass</h2>\n<ul class=\"fx-list product-text__list\">\n<li class=\"fx-list__item list-item fx-list__item--circle\"><span class=\"fx-text fx-text--plus list-item__text\">Equipped with 4 x 10\" custom voiced bass woofers + 1 x 3\" custom voiced tweeter</span></li>\n<li class=\"fx-list__item list-item fx-list__item--circle\"><span class=\"fx-text fx-text--plus list-item__text\">Power rating: 450 Watts</span></li>\n<li class=\"fx-list__item list-item fx-list__item--circle\"><span class=\"fx-text fx-text--plus list-item__text\">Impedance: 8 ohms</span></li>\n<li class=\"fx-list__item list-item fx-list__item--circle\"><span class=\"fx-text fx-text--plus list-item__text\">Frequency response: 60 Hz - 20,000 Hz</span></li>\n<li class=\"fx-list__item list-item fx-list__item--circle\"><span class=\"fx-text fx-text--plus list-item__text\">Housing made of 15 mm poplar plywood</span></li>\n<li class=\"fx-list__item list-item fx-list__item--circle\"><span class=\"fx-text fx-text--plus list-item__text\">Connections: 6.3 mm jack &amp; speaker twist socket</span></li>\n<li class=\"fx-list__item list-item fx-list__item--circle\"><span class=\"fx-text fx-text--plus list-item__text\">On/off switch for the tweeter</span></li>\n<li class=\"fx-list__item list-item fx-list__item--circle\"><span class=\"fx-text fx-text--plus list-item__text\">Dimensions (W x D x H): 600 x 380 x 635 mm</span></li>\n<li class=\"fx-list__item list-item fx-list__item--circle\"><span class=\"fx-text fx-text--plus list-item__text\">Weight: 32.3 kg</span></li>\n<li class=\"fx-list__item list-item fx-list__item--circle\"><span class=\"fx-text fx-text--plus list-item__text\">Design: Bronco-style Tolex covering and British-style grille cloth</span></li>\n</ul>",
+  "has_file_inputs": 5,
+  "has_main_image_input": true,
+  "logged_in_user": {
+    "email": "",
+    "first": "",
+    "last": "",
+    "name": "პროფაილის რედაქტირება",
+    "source": "dom:a[href*=\"profiles.update\"]",
+    "user_id": "460"
+  },
+  "meta_description": "Harley Benton SolidBass 410T Cabinet for Electric Bass  450W ბას გიტარის კაბინეტი",
+  "meta_keywords": "Harley Benton SolidBass 410T Cabinet for Electric Bass  450W ბას გიტარის კაბინეტი,basgitaris kabineti",
+  "old_price": "0.00",
+  "page_title": "Harley Benton SolidBass 410T ბას-გიტარის კაბინეტი",
+  "price": "0.00",
+  "product_code": "477626",
+  "product_name": "Harley Benton SolidBass 410T ბას-გიტარის კაბინეტი",
+  "promo_text": "",
+  "seo_name": "harley-benton-solidbass-410t-cabinet-for-electric-bass-450w",
+  "url": "https://acoustic.ge/aco_st_admin.php?dispatch=products.update&product_id=23934",
+  "video_gallery": {
+    "add_buttons": [],
+    "fields_sample": [
+      {
+        "id": "",
+        "name": "product_data[ab__vg_settings][replace_image]",
+        "tag": "input",
+        "type": "hidden",
+        "value": "N"
+      },
+      {
+        "id": "ab__vg__replace_image",
+        "name": "product_data[ab__vg_settings][replace_image]",
+        "tag": "input",
+        "type": "checkbox",
+        "value": "Y"
+      },
+      {
+        "id": "",
+        "name": "product_data[ab__vg_videos][1][video_id]",
+        "tag": "input",
+        "type": "hidden",
+        "value": ""
+      },
+      {
+        "id": "",
+        "name": "product_data[ab__vg_videos][1][pos]",
+        "tag": "input",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "id": "",
+        "name": "product_data[ab__vg_videos][1][title]",
+        "tag": "input",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "id": "",
+        "name": "product_data[ab__vg_videos][1][type]",
+        "tag": "select",
+        "type": "select-one",
+        "value": "Y"
+      },
+      {
+        "id": "product_data[ab__vg_videos][1][status]",
+        "name": "product_data[ab__vg_videos][1][status]",
+        "tag": "input",
+        "type": "hidden",
+        "value": "A"
+      },
+      {
+        "id": "ab__vg__video_path__1",
+        "name": "product_data[ab__vg_videos][1][video_path]",
+        "tag": "input",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "id": "ab__vg__icon_type__1__snapshot",
+        "name": "product_data[ab__vg_videos][1][icon_type]",
+        "tag": "input",
+        "type": "radio",
+        "value": "snapshot"
+      },
+      {
+        "id": "ab__vg__icon_type__1__icon",
+        "name": "product_data[ab__vg_videos][1][icon_type]",
+        "tag": "input",
+        "type": "radio",
+        "value": "icon"
+      },
+      {
+        "id": "",
+        "name": "video_icon_image_data[1][pair_id]",
+        "tag": "input",
+        "type": "hidden",
+        "value": ""
+      },
+      {
+        "id": "",
+        "name": "video_icon_image_data[1][type]",
+        "tag": "input",
+        "type": "hidden",
+        "value": "M"
+      },
+      {
+        "id": "",
+        "name": "video_icon_image_data[1][object_id]",
+        "tag": "input",
+        "type": "hidden",
+        "value": "0"
+      },
+      {
+        "id": "alt_icon_video_icon_1",
+        "name": "video_icon_image_data[1][image_alt]",
+        "tag": "input",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "id": "file_c77a5119d1621e60fcc778ed07f3331d",
+        "name": "file_video_icon_image_icon[1]",
+        "tag": "input",
+        "type": "hidden",
+        "value": "video_icon"
+      },
+      {
+        "id": "type_c77a5119d1621e60fcc778ed07f3331d",
+        "name": "type_video_icon_image_icon[1]",
+        "tag": "input",
+        "type": "hidden",
+        "value": "local"
+      },
+      {
+        "id": "local_c77a5119d1621e60fcc778ed07f3331d",
+        "name": "file_video_icon_image_icon[1]",
+        "tag": "input",
+        "type": "file",
+        "value": ""
+      },
+      {
+        "id": "is_high_res_c77a5119d1621e60fcc778ed07f3331d_hidden",
+        "name": "is_high_res_video_icon_image_icon[1]",
+        "tag": "input",
+        "type": "hidden",
+        "value": "N"
+      },
+      {
+        "id": "is_high_res_c77a5119d1621e60fcc778ed07f3331d",
+        "name": "is_high_res_video_icon_image_icon[1]",
+        "tag": "input",
+        "type": "checkbox",
+        "value": "Y"
+      },
+      {
+        "id": "ab__vg__description__1",
+        "name": "product_data[ab__vg_videos][1][description]",
+        "tag": "textarea",
+        "type": "textarea",
+        "value": ""
+      },
+      {
+        "id": "",
+        "name": "product_data[ab__vg_videos][1][settings][]",
+        "tag": "input",
+        "type": "hidden",
+        "value": ""
+      },
+      {
+        "id": "ab__vg_iframe_attributes_1",
+        "name": "product_data[ab__vg_videos][1][settings][iframe_attributes]",
+        "tag": "input",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "id": "ab__vg_iframe_attributes_1",
+        "name": "product_data[ab__vg_videos][1][settings][iframe_attributes]",
+        "tag": "input",
+        "type": "text",
+        "value": ""
+      }
+    ],
+    "present": true
+  },
+  "visible_tabs": [
+    "Documentation",
+    "Videos",
+    "Add-ons and themes",
+    "Quick start guide",
+    "Ask us a question",
+    "What's new",
+    "ზოგადი",
+    "ზოგადი",
+    "მიწოდების პირობები",
+    "მიწოდების პირობები",
+    "პარამეტრები",
+    "პარამეტრები",
+    "მახასიათებლები",
+    "მახასიათებლები",
+    "Variations",
+    "Variations",
+    "SEO",
+    "SEO",
+    "ფასდაკლება რაოდენობაზე",
+    "ფასდაკლება რაოდენობაზე",
+    "გამომწერები",
+    "გამომწერები",
+    "მოდულები",
+    "მოდულები",
+    "Tabs",
+    "Tabs",
+    "Search by product",
+    "Search by product",
+    "თეგები",
+    "თეგები",
+    "დანართები",
+    "დანართები",
+    "Product bundles",
+    "Product bundles",
+    "საბონუსო ქულები",
+    "საბონუსო ქულები",
+    "AB: Video gallery of the product",
+    "AB: Video gallery of the product",
+    "AB: Stickers",
+    "AB: Stickers",
+    "Reviews",
+    "Reviews",
+    "საჭირო პროდუქცია",
+    "საჭირო პროდუქცია",
+    "ფორმატი",
+    "ფორმატი",
+    "ზოგადი",
+    "ზოგადი",
+    "ავტორი",
+    "ბრენდი"
+  ],
+  "enrich_features": {
+    "selects": 5,
+    "cache_injected": 3,
+    "opened_dropdowns": 4,
+    "options_seen": 22,
+    "human_labels": 33,
+    "ajax_fixes": 5,
+    "batch": true,
+    "samples": []
+  },
+  "enrich_categories_count": 168,
+  "scan_url": "https://acoustic.ge/aco_st_admin.php?dispatch=products.update&product_id=23934",
+  "still_on_product_update": true
+}

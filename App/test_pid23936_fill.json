@@ -1,0 +1,117 @@
+{
+  "categories": {
+    "attempted": 1,
+    "matched": 0,
+    "note": "No category control matched. Re-Scrape on the product page, then Fill again."
+  },
+  "debug": {
+    "descrFieldsFound": 1,
+    "descriptionLength": 1013,
+    "featureFieldsFound": 3,
+    "oldPriceFieldsFound": 1,
+    "priceFieldsFound": 1,
+    "productFieldsFound": 1,
+    "promoFieldsFound": 1,
+    "tagFieldsFound": 1,
+    "videoFieldsFound": 8
+  },
+  "features": {
+    "attempted": 2,
+    "details": [
+      {
+        "feature": "ბრენდი",
+        "how": "field_name",
+        "matched": true,
+        "value": [
+          "1036",
+          "König & Meyer (K&M)"
+        ]
+      },
+      {
+        "feature": "მდგომარეობა",
+        "how": "field_name",
+        "matched": true,
+        "value": [
+          "41",
+          "ახალი"
+        ]
+      }
+    ],
+    "fields_on_page": 3,
+    "matched": 2
+  },
+  "full_description": {
+    "ok": true,
+    "preview": "<p>K&M 18997 კლავიშის სადგამი არის იდეალური გადაწყვეტა მუსიკოსებისთვის, რომლებიც",
+    "reason": "filled_rich",
+    "selector": "#elm_product_full_descr"
+  },
+  "images": {
+    "note": "File/image uploads must be done manually in CS-Cart."
+  },
+  "meta_description": {
+    "ok": true,
+    "preview": "K&M 18997 კლავიშის სადგამი - მსუბუქი და სტაბილური, იდეალური პროფესიონალი მუსიკოს",
+    "reason": "filled",
+    "selector": "#elm_product_meta_descr"
+  },
+  "meta_keywords": {
+    "ok": true,
+    "preview": "K&M, კლავიშის სადგამი, მუსიკალური აქსესუარები, პროფესიონალური, მსუბუქი",
+    "reason": "filled",
+    "selector": "#elm_product_meta_keywords"
+  },
+  "old_price": {
+    "ok": true,
+    "preview": "0.00",
+    "reason": "filled",
+    "selector": "#elm_list_price"
+  },
+  "page_title": {
+    "ok": true,
+    "preview": "K&M 18997 კლავიშის სადგამი - მსუბუქი და სტაბილური სადგამი",
+    "reason": "filled",
+    "selector": "#elm_product_page_title"
+  },
+  "price": {
+    "ok": true,
+    "preview": "0.00",
+    "reason": "filled",
+    "selector": "#elm_price_price"
+  },
+  "product_name": {
+    "ok": true,
+    "preview": "K&M 18997 კლავიშის სადგამი",
+    "reason": "filled",
+    "selector": "#product_description_product"
+  },
+  "promo_text": {
+    "ok": true,
+    "preview": "<p>K&M 18997 კლავიშის სადგამი - მსუბუქი და სტაბილური გადაწყვეტა თქვენი მუსიკალურ",
+    "reason": "filled_rich",
+    "selector": "#elm_product_promo_text"
+  },
+  "seo_name": {
+    "ok": true,
+    "preview": "km-18997-keyboard-stand",
+    "reason": "filled",
+    "selector": "#elm_seo_name"
+  },
+  "tags": {
+    "ok": true,
+    "preview": "კლავიშის სადგამი, K&M, მუსიკალური ინსტრუმენტი, აქსესუარები, "
+  },
+  "videos": {
+    "attempted": 1,
+    "fields_on_page": 8,
+    "matched": 1,
+    "note": ""
+  },
+  "category_chip_repair": {
+    "patched": 0
+  },
+  "feature_display_repair": {
+    "entries": 2,
+    "patched": 4
+  }
+}
