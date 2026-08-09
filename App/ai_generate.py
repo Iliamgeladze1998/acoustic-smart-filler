@@ -8,6 +8,7 @@ from typing import Any
 
 from openai import OpenAI
 
+import category_match
 from youtube_tools import ensure_video_watch_urls, is_youtube_search_url, resolve_youtube_watch_url
 
 
@@ -25,26 +26,21 @@ PRIMARY SOURCE: product_title (the CS-Cart product Name / model line).
 You must INFER from the title: brand, product type, intended use, and which store categories fit.
 Do not invent a completely different product.
 
-======== CATEGORIES (CRITICAL) ========
-- page_context.category_tree shows the FULL hierarchical category tree (indented).
-- page_context.category_catalog has id+label+path+parent_id for each category.
-- Read the tree to understand the structure BEFORE choosing.
-- Pick the ONE most specific leaf category that best matches the product type.
-- Return EXACT labels from category_catalog (copy spelling character-for-character).
-- ALWAYS pick the deepest leaf (subcategory), never a vague top-level parent when children exist.
-- Examples for acoustic.ge-style trees:
-  • Electric guitar title → leaf like „ელექტრო“ under „კატეგორია: გიტარა“
-    NEVER: bass, acoustic, classical, tools, mics, DJ, mixers, amps alone.
-  • Acoustic guitar → „აკუსტიკური“ / acoustic leaf only
-  • Classical guitar → „კლასიკური“ / classical leaf only
-  • Bass guitar → „ბას-გიტარა“ leaf only (NOT cabinets, NOT effects, NOT accessories)
-  • Bass cabinet/amp → „გამაძლიერებელი/კომბი“ under „ბასი“
-  • Microphone → „მიკროფონები“ leaf only
-  • Guitar effect/pedal → „ეფექტები“ under „კატეგორია: გიტარა“ (NOT „ელექტრო“ — that's for guitars!)
-  • Keyboard stand → „კლავიშის“ under „სადგამები“
-  • Mixer → mixer/console leaf only
-- If no catalog label is a clear, exact fit for this product type, return [] (empty) — do NOT guess.
-- NEVER invent category names missing from category_catalog.
+======== PRODUCT TYPE (CRITICAL) ========
+- The app maps your product type to the store category tree LOCALLY — you do NOT see the tree.
+- Return TWO Georgian strings:
+  • product_type_ka  — the specific product type in Georgian, e.g.
+      „ელექტრო გიტარა“, „აკუსტიკური გიტარა“, „კლასიკური გიტარა“, „ბას-გიტარა“,
+      „ბას-გიტარის კაბინეტი“, „გიტარის ეფექტი (პედალი)“, „ვოკალური მიკროფონი“,
+      „კლავიშის სადგამი“, „MIDI კლავიატურა“, „სტუდიური მონიტორი“, „მიქსერი“.
+  • product_family_ka — the broader family in Georgian, e.g.
+      „გიტარა“, „ბასი“, „სადგამები“, „მიკროფონი“, „კლავიშები“, „გამაძლიერებელი“, „DJ“.
+- Use the head noun last (Georgian word order): „გიტარის ეფექტი“, NOT „ეფექტი გიტარის“.
+- Be precise: a bass cabinet is „ბას-გიტარის კაბინეტი“ / „ბასის გამაძლიერებელი“, NOT „ბას-გიტარა“.
+- A guitar effect pedal is „გიტარის ეფექტი“, NOT „ელექტრო გიტარა“ even if the brand is „Electro Harmonix“.
+- Return is_gift_candidate = true if the product is a small, attractive item suitable as a gift
+  (picks, straps, capos, tuners, small accessories, cables, stands, kazoos, harmonicas, small pedals).
+  Large/expensive items (guitars, keyboards, mixers, PA systems) → false.
 
 ======== FEATURES / SPECS (CRITICAL) ========
 - page_context.feature_catalog lists form controls with their option labels/ids from the page.
@@ -98,13 +94,6 @@ videos (AB Video gallery):
   NEVER return placeholder URLs like watch?v=VIDEO_ID, watch?v=XXXX, watch?v=YOUR_ID.
 - title + description in Georgian. provider youtube, status A, position 0.
 
-CATEGORIES extra rules:
-- MANDATORY: Always include "FINA" category if it exists in category_catalog, for EVERY product.
-- GIFT category: If the product is a small, attractive item suitable as a gift (e.g. picks, straps,
-  capos, tuners, small accessories, cables, stands, kazoos, harmonicas, small pedals, etc.),
-  also include "აჩუქე" category if it exists in category_catalog. Use judgment: large/expensive
-  items (guitars, keyboards, mixers, PA systems) are NOT gift items.
-
 Do NOT invent local image paths. Never invent stock/SKU banking data.
 """
 
@@ -121,7 +110,9 @@ def _schema_hint() -> dict[str, Any]:
         "meta_description": "Georgian string",
         "meta_keywords": "Georgian terms, comma-separated",
         "seo_name": "latin slug",
-        "categories": ["EXACT label from category_catalog", "..."],
+        "product_type_ka": "Georgian product type, head noun last, e.g. „ელექტრო გიტარა“",
+        "product_family_ka": "broader Georgian family, e.g. „გიტარა“",
+        "is_gift_candidate": "bool — small attractive item suitable as a gift",
         "features": {"ბრენდი": "exact option label", "მდგომარეობა": "exact option label"},
         "feature_values": [
             {
@@ -1377,10 +1368,9 @@ def generate_product_fields(
         "existing_tags": (page_context or {}).get("existing_tags"),
         "product_code": (page_context or {}).get("product_code"),
         "feature_catalog": feature_catalog,
-        "category_catalog": category_catalog,
-        "category_tree": _category_tree_summary(category_catalog),
-        # keep short lists for older prompt compatibility
-        "available_categories": [c.get("label") for c in category_catalog[:80]],
+        # Compact one-line-per-family tree so the model knows what families exist,
+        # without shipping the full 168-node catalog (~14k tokens saved).
+        "category_families": category_match.compact_tree_prompt(category_catalog),
         "available_features_labels": [f.get("label") for f in feature_catalog],
         "video_gallery": (page_context or {}).get("video_gallery") or {},
         "web_search_results": web_context[:6000] if web_context else "",
@@ -1393,28 +1383,18 @@ def generate_product_fields(
         "page_context": compact_context,
         "required_json_schema": _schema_hint(),
         "instruction": (
-            "PRIMARY TASK: from product_title alone, choose correct store CATEGORIES and FEATURES "
-            "(especially ბრენდი/Brand and მდგომარეობა) using EXACT labels from category_catalog and "
-            "feature_catalog options. "
+            "PRIMARY TASK: from product_title alone, choose the correct FEATURES "
+            "(especially ბრენდი/Brand and მდგომარეობა) using EXACT labels from feature_catalog options. "
             "Also write full_description, promo_text, SEO, and video texts in Georgian. "
-            "Never invent brands or categories missing from the catalogs. "
+            "Never invent brands missing from the catalog. "
             "Do not set ავტორი (app sets logged-in user). "
-            "\n\nCATEGORY SELECTION (CRITICAL):\n"
-            "- page_context.category_tree shows the FULL hierarchical category tree (indented).\n"
-            "- page_context.category_catalog has id+label+path+parent_id for each category.\n"
-            "- Read the tree to understand the structure BEFORE choosing.\n"
-            "- Pick the ONE most specific leaf category that best matches the product.\n"
-            "- Examples of correct picks:\n"
-            "  • 'EV PRO 780 MIC' → მიკროფონები (leaf under სტუდია)\n"
-            "  • 'Harley Benton SolidBass 410T ბას-გიტარის კაბინეტი' → გამაძლიერებელი/კომბი (leaf under ბასი)\n"
-            "  • 'K&M 18997 კლავიშის სადგამი' → კლავიშის (leaf under სადგამები)\n"
-            "  • 'Electro Harmonix String9' → ეფექტები (leaf under კატეგორია: გიტარა)\n"
-            "  • 'Ibanez GAX-70' → ელექტრო (leaf under კატეგორია: გიტარა)\n"
-            "- WARNING: 'Electro Harmonix' is a BRAND name — it does NOT mean 'electric guitar'.\n"
-            "  The product 'Electro Harmonix String9' is a GUITAR EFFECT PEDAL, not an electric guitar.\n"
-            "  Its category is ეფექტები (under კატეგორია: გიტარა), NOT ელექტრო.\n"
-            "- NEVER pick: აქსესუარები (too generic), top-level parents, or wrong product family.\n"
-            "- If no leaf is a clear fit, return empty categories array.\n"
+            "\n\nPRODUCT TYPE (CRITICAL):\n"
+            "- page_context.category_families lists the store's category families (one line each).\n"
+            "- Return product_type_ka (specific Georgian product type) and product_family_ka (broader family).\n"
+            "- The app maps these to the store category tree LOCALLY — you do NOT pick categories yourself.\n"
+            "- Use Georgian head-noun-last order: „გიტარის ეფექტი“, „ბას-გიტარის კაბინეტი“.\n"
+            "- Be precise: a bass cabinet is NOT „ბას-გიტარა“; a guitar effect is NOT „ელექტრო გიტარა“.\n"
+            "- Return is_gift_candidate = true for small gift-suitable items (picks, straps, capos, …).\n"
             "\nWEB SEARCH RESULTS: if page_context.web_search_results is non-empty, "
             "PREFER real specifications, frequency response, polar patterns, connector types, "
             "weight, dimensions, and other factual details from those results over your own knowledge. "
@@ -1470,51 +1450,57 @@ def generate_product_fields(
         title, str(data.get("full_description") or ""), content_language
     )
 
-    # Snap categories to real catalog labels, then STRICT filter by product type
-    snapped = _snap_categories_to_catalog(data.get("categories"), category_catalog)
-    data["categories"] = _select_categories_for_product(
-        title, snapped, category_catalog, max_keep=3
+    # ---- Categories: data-driven classifier on the AI's product type ----
+    # The AI returns product_type_ka / product_family_ka (Georgian strings); the
+    # category_match module maps them to the store's category tree locally,
+    # saving ~14k tokens of category catalog in the prompt.
+    type_hint = str(data.get("product_type_ka") or "").strip()
+    family_hint = str(data.get("product_family_ka") or "").strip()
+    # Backward-compat: if an older model still returns "categories", feed them
+    # to the classifier as ai_labels so they vote alongside the hints.
+    ai_labels = data.get("categories") if isinstance(data.get("categories"), list) else None
+
+    result = category_match.classify(
+        catalog=category_catalog,
+        title=title,
+        family_hint=family_hint,
+        type_hint=type_hint,
+        ai_labels=ai_labels,
+        max_keep=3,
     )
+    chosen: list[str] = list(result.get("labels") or [])
+
+    # Fallback to the legacy rule-based selector if the classifier is empty
+    if not chosen:
+        snapped = _snap_categories_to_catalog(ai_labels, category_catalog)
+        chosen = _select_categories_for_product(
+            title, snapped, category_catalog, max_keep=3
+        )
+
+    data["categories"] = chosen
     data["product_kind"] = _infer_product_kind(title) or ""
+    data["category_trace"] = result.get("trace") or []
 
-    # Post-process: fix common AI category mistakes based on title keywords
-    title_n = _norm(title)
-    cat_set = set(_norm(c) for c in data["categories"])
+    # ---- FINA: always include if it exists in the catalog ----
+    fina_lab = None
+    for c in category_catalog:
+        if isinstance(c, dict) and _norm(str(c.get("label") or "")) == "fina":
+            fina_lab = str(c.get("label") or "").strip()
+            break
+    cat_norm = [_norm(x) for x in data["categories"]]
+    if fina_lab and _norm(fina_lab) not in cat_norm:
+        data["categories"].append(fina_lab)
 
-    # Guitar effect/pedal should never be in "ელექტრო" (electric guitar) category
-    if re.search(r"ეფექტ|effect|pedal|stompbox|overdrive|distortion|reverb|delay|chorus|flanger|phaser|wah", title_n, re.I):
-        wrong_cats = {"ელექტრო", "ელექტრო-ჩასაბერი", "ელექტრო-აკუსტიკური"}
-        if cat_set & wrong_cats:
-            # Find "ეფექტები" in catalog
-            for c in category_catalog:
-                if _norm(str(c.get("label") or "")) == "ეფექტები":
-                    data["categories"] = ["ეფექტები"]
-                    break
-            else:
-                data["categories"] = [c for c in data["categories"] if _norm(c) not in wrong_cats]
-
-    # Bass cabinet should never be in "ბას-გიტარა" (bass guitar) category
-    if re.search(r"კაბინეტ|cabinet|410t|115|210|810", title_n, re.I):
-        if _norm("ბას-გიტარა") in cat_set:
-            for c in category_catalog:
-                if _norm(str(c.get("label") or "")) == "გამაძლიერებელი/კომბი":
-                    data["categories"] = ["გამაძლიერებელი/კომბი"]
-                    break
-
-    # Keyboard stand should never be in "აქსესუარები" or "სინთეზატორი"
-    if re.search(r"სადგამ|stand", title_n, re.I) and re.search(r"კლავიშ|keyboard", title_n, re.I):
-        wrong_cats = {"აქსესუარები", "სინთეზატორი", "კლავიშებიანი"}
-        if cat_set & wrong_cats:
-            for c in category_catalog:
-                if _norm(str(c.get("label") or "")) == "კლავიშის":
-                    data["categories"] = ["კლავიშის"]
-                    break
-
-    # Remove generic "აქსესუარები" if a more specific category exists
-    if "აქსესუარები" in cat_set and len(data["categories"]) > 1:
-        data["categories"] = [c for c in data["categories"] if _norm(c) != "აქსესუარები"]
-        if not data["categories"]:
-            data["categories"] = ["აქსესუარები"]
+    # ---- აჩუქე (gift): add if the AI flagged the product as a gift candidate ----
+    is_gift = bool(data.get("is_gift_candidate"))
+    if is_gift:
+        gift_lab = None
+        for c in category_catalog:
+            if isinstance(c, dict) and _norm(str(c.get("label") or "")) == "აჩუქე":
+                gift_lab = str(c.get("label") or "").strip()
+                break
+        if gift_lab and _norm(gift_lab) not in [_norm(x) for x in data["categories"]]:
+            data["categories"].append(gift_lab)
 
     videos = data.get("videos")
     if not isinstance(videos, list) or not videos:
