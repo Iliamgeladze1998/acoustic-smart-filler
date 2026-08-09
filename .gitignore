@@ -10,3 +10,5 @@ last_fill_debug.json
 test_scan_output.json
 test_ai_output.json
 test_fill_result.json
+App/test_pid*.json
+App/_inspect_out.json
