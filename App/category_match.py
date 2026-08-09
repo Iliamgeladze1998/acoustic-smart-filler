@@ -56,6 +56,19 @@ _LEAF_MIN_SCORE = 1.15
 _FAMILY_MIN_SCORE = 0.85
 _GENERIC_PENALTY = 0.35
 
+# Type-word synonyms: when the AI uses a word not present in any catalog label,
+# these map it to the store's vocabulary. Practical lexical resource, like
+# stemming or stop-words — not a per-product rule.
+#   „კაბინეტი“ → გამაძლიერებელი (the store sells bass cabinets under
+#   „გამაძლიერებელი/კომბი“, there is no „კაბინეტი“ leaf).
+_TYPE_SYNONYMS: dict[str, list[str]] = {
+    "კაბინეტი": ["გამაძლიერებელი", "კომბი"],
+    "კომბო": ["გამაძლიერებელი", "კომბი"],
+    "პედალი": ["ეფექტი", "ეფექტები"],
+    "სტეკი": ["გამაძლიერებელი", "კომბი"],
+    "ჰედი": ["გამაძლიერებელი"],
+}
+
 
 def _norm(s: Any) -> str:
     return re.sub(r"\s+", " ", str(s or "").lower()).strip()
@@ -307,10 +320,17 @@ def classify(
         if _norm(t) not in fam_norm:
             head_tok = t
             break
+    # Synonym expansion: if the head noun has known synonyms in the store's
+    # vocabulary, add them as extra item hints so leaves like
+    # „გამაძლიერებელი/კომბი“ can match a type like „ბას-გიტარის კაბინეტი“.
+    syn_hints: list[tuple[str, float]] = []
+    if head_tok:
+        for syn in _TYPE_SYNONYMS.get(head_tok, []):
+            syn_hints.append((syn, 1.5))
     item_hints = [
         (t, 1.5 if (i == len(type_toks) - 1 and _norm(t) not in fam_norm) else 1.0)
         for i, t in enumerate(type_toks)
-    ] + [(t, 0.6) for t in title_toks]
+    ] + syn_hints + [(t, 0.6) for t in title_toks]
     # Family evidence: every word counts equally.
     family_hints = (
         [(t, 1.0) for t in fam_toks]
@@ -378,22 +398,52 @@ def classify(
         if _norm(node["label"]) in roots_with_kids and _norm(node["label"]) != _norm(nodes[rid]["label"]):
             base *= 0.45
 
-        if head_tok and any(_tok_match(x, head_tok) for x in lt):
-            head_matches_root.add(rid)
+        # Head match: the leaf matches the head noun OR one of its synonyms.
+        if head_tok:
+            head_syns = [head_tok] + _TYPE_SYNONYMS.get(head_tok, [])
+            if any(_tok_match(x, hs) for x in lt for hs in head_syns):
+                head_matches_root.add(rid)
 
         raw.append((base, rid, cid, lt))
 
-    # ---- pass 2: apply head-coverage penalty + generic/AI adjustments ----
-    # If the head noun matches NO leaf anywhere, the type hint is vague
-    # (e.g. „გიტარისთვის ნივთი“ — a thing for guitars). Penalize all leaf
-    # scores so the family fallback can take over.
+    # ---- pass 2: apply penalties + generic/AI adjustments ----
+    # 1) Head orphan: the discriminating head noun matches NO leaf anywhere.
+    #    Penalize leaves that match only non-head tokens AND have low coverage,
+    #    so the family fallback can take over. A leaf with high coverage
+    #    („ეფექტები“ matches „ეფექტების“ fully) is still a good pick even if
+    #    the head „პედალი“ is just a form word not in the catalog.
     head_orphaned = bool(head_tok) and not head_matches_root
+    head_syns = [head_tok] + _TYPE_SYNONYMS.get(head_tok, []) if head_tok else []
     for base, rid, cid, lt in raw:
         node = nodes[cid]
-        if head_orphaned:
+        # Low-coverage penalty: a leaf where <50% of its own tokens match any
+        # type/family hint is a weak partial match („ვოკალის პროცესორი/ეფექტი“
+        # matches only „ვოკალის“ out of 3 tokens → 33% coverage).
+        cov = 0.0
+        if lt:
+            cov = sum(1 for x in lt if any(_tok_match(x, h) for h, _ in item_hints + family_hints)) / len(lt)
+        if cov < 0.5:
             base *= 0.5
-        elif head_tok and rid in head_matches_root and not any(_tok_match(x, head_tok) for x in lt):
-            base *= 0.55
+        # Head-mismatch penalty: a sibling in the SAME family matches the head
+        # noun (or a synonym) but THIS leaf does not — it's the wrong type.
+        # „ბას-გიტარა“ misses head „გამაძლიერებელი“ while „გამაძლიერებელი/კომბი“
+        # matches it → „ბას-გიტარა“ is wrong for a bass cabinet.
+        if head_tok and rid in head_matches_root and not any(
+            _tok_match(x, hs) for x in lt for hs in head_syns
+        ):
+            base *= 0.5
+        # Head-orphan + low coverage: almost certainly wrong („ბას-გიტარა“
+        # matches „ბას“+„გიტარა“ from „ბას-გიტარის კაბინეტი“ but misses head
+        # „კაბინეტი“ and has only 2/2 tokens from family words, not the type).
+        if head_orphaned and cov < 0.5:
+            base *= 0.4
+        # Head-orphan + all tokens are family/root words: the leaf matches only
+        # family-level vocabulary, not the actual product type („ბას-გიტარა“
+        # for a bass cabinet — both „ბას“ and „გიტარა“ are root labels).
+        if head_orphaned and lt and all(
+            any(_tok_match(x, rt) for rt in root_toks) for x in lt
+        ):
+            base *= 0.5
         if _is_generic(node["label"]):
             explicit = any(
                 any(_tok_match(t, g) for g in _tokens(node["label"])) for t in type_toks
